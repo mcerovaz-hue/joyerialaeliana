@@ -1,4 +1,3 @@
-na · HTML
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +9,7 @@ na · HTML
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
   :root {
     --cream: #f7f4ef;
     --warm-white: #fdfcfa;
@@ -21,16 +20,16 @@ na · HTML
     --light: #9a9690;
     --border: rgba(184,151,90,0.2);
   }
- 
+
   html { scroll-behavior: smooth; }
- 
+
   body {
     font-family: 'Jost', sans-serif;
     background: var(--warm-white);
     color: var(--charcoal);
     overflow-x: hidden;
   }
- 
+
   /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
@@ -40,7 +39,7 @@ na · HTML
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
   }
- 
+
   .nav-logo {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.35rem;
@@ -49,9 +48,9 @@ na · HTML
     color: var(--charcoal);
     text-decoration: none;
   }
- 
+
   .nav-logo span { color: var(--gold); }
- 
+
   nav a.nav-link {
     font-size: 0.7rem;
     letter-spacing: 0.18em;
@@ -61,9 +60,9 @@ na · HTML
     transition: color 0.2s;
   }
   nav a.nav-link:hover { color: var(--gold); }
- 
+
   .nav-links { display: flex; gap: 2rem; align-items: center; }
- 
+
   /* HERO */
   .hero {
     min-height: 100vh;
@@ -71,12 +70,12 @@ na · HTML
     grid-template-columns: 1fr 1fr;
     padding-top: 70px;
   }
- 
+
   .hero-img {
     position: relative;
     overflow: hidden;
   }
- 
+
   .hero-img img {
     width: 100%; height: 100%;
     object-fit: cover;
@@ -84,20 +83,20 @@ na · HTML
     display: block;
     filter: brightness(0.92);
   }
- 
+
   .hero-img::after {
     content: '';
     position: absolute; inset: 0;
     background: linear-gradient(to right, transparent 60%, var(--warm-white));
   }
- 
+
   .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 4rem 4rem 4rem 3rem;
   }
- 
+
   .hero-eyebrow {
     font-size: 0.65rem;
     letter-spacing: 0.3em;
@@ -105,7 +104,7 @@ na · HTML
     color: var(--gold);
     margin-bottom: 1.5rem;
   }
- 
+
   .hero-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2.8rem, 4vw, 4rem);
@@ -114,12 +113,12 @@ na · HTML
     color: var(--charcoal);
     margin-bottom: 1.5rem;
   }
- 
+
   .hero-title em {
     font-style: italic;
     color: var(--gold);
   }
- 
+
   .hero-sub {
     font-size: 0.85rem;
     line-height: 1.9;
@@ -128,9 +127,9 @@ na · HTML
     max-width: 380px;
     margin-bottom: 2.5rem;
   }
- 
+
   .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
- 
+
   .btn-primary {
     display: inline-flex; align-items: center; gap: 0.5rem;
     background: var(--gold);
@@ -143,7 +142,7 @@ na · HTML
     transition: background 0.25s, transform 0.2s;
   }
   .btn-primary:hover { background: var(--charcoal); transform: translateY(-1px); }
- 
+
   .btn-secondary {
     display: inline-flex; align-items: center; gap: 0.5rem;
     border: 1px solid var(--gold);
@@ -156,7 +155,7 @@ na · HTML
     transition: all 0.25s;
   }
   .btn-secondary:hover { background: var(--gold); color: #fff; }
- 
+
   /* DIVIDER */
   .divider {
     display: flex; align-items: center; gap: 1.5rem;
@@ -166,33 +165,33 @@ na · HTML
     background: var(--cream);
     overflow-x: auto;
   }
- 
+
   .divider-item {
     display: flex; align-items: center; gap: 0.75rem;
     white-space: nowrap; flex-shrink: 0;
   }
- 
+
   .divider-dot {
     width: 4px; height: 4px;
     border-radius: 50%;
     background: var(--gold);
     flex-shrink: 0;
   }
- 
+
   .divider-text {
     font-size: 0.68rem;
     letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--mid);
   }
- 
+
   /* SERVICES */
   .services {
     padding: 6rem 2.5rem;
     max-width: 1100px;
     margin: 0 auto;
   }
- 
+
   .section-label {
     font-size: 0.65rem;
     letter-spacing: 0.3em;
@@ -200,7 +199,7 @@ na · HTML
     color: var(--gold);
     margin-bottom: 0.75rem;
   }
- 
+
   .section-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2rem, 3vw, 2.8rem);
@@ -209,16 +208,16 @@ na · HTML
     color: var(--charcoal);
     margin-bottom: 3.5rem;
   }
- 
+
   .section-title em { font-style: italic; color: var(--gold); }
- 
+
   .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 0;
     border: 1px solid var(--border);
   }
- 
+
   .service-card {
     padding: 2.5rem 2rem;
     border-right: 1px solid var(--border);
@@ -226,13 +225,13 @@ na · HTML
   }
   .service-card:last-child { border-right: none; }
   .service-card:hover { background: var(--cream); }
- 
+
   .service-icon {
     font-size: 1.4rem;
     margin-bottom: 1.25rem;
     display: block;
   }
- 
+
   .service-name {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem;
@@ -240,14 +239,14 @@ na · HTML
     color: var(--charcoal);
     margin-bottom: 0.6rem;
   }
- 
+
   .service-desc {
     font-size: 0.8rem;
     line-height: 1.8;
     color: var(--mid);
     font-weight: 300;
   }
- 
+
   /* ABOUT STRIP */
   .about {
     background: var(--charcoal);
@@ -259,7 +258,7 @@ na · HTML
     align-items: center;
     max-width: 100%;
   }
- 
+
   .about-label {
     font-size: 0.65rem;
     letter-spacing: 0.3em;
@@ -267,7 +266,7 @@ na · HTML
     color: var(--gold-light);
     margin-bottom: 0.75rem;
   }
- 
+
   .about-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.8rem, 2.5vw, 2.4rem);
@@ -276,9 +275,9 @@ na · HTML
     color: var(--cream);
     margin-bottom: 1.5rem;
   }
- 
+
   .about-title em { font-style: italic; color: var(--gold-light); }
- 
+
   .about-text {
     font-size: 0.83rem;
     line-height: 1.9;
@@ -286,13 +285,13 @@ na · HTML
     font-weight: 300;
     margin-bottom: 2rem;
   }
- 
+
   .about-stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
   }
- 
+
   .stat-num {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
@@ -300,7 +299,7 @@ na · HTML
     color: var(--gold-light);
     line-height: 1;
   }
- 
+
   .stat-label {
     font-size: 0.7rem;
     letter-spacing: 0.15em;
@@ -308,7 +307,7 @@ na · HTML
     color: rgba(247,244,239,0.5);
     margin-top: 0.3rem;
   }
- 
+
   /* HORARIO + CONTACTO */
   .info {
     padding: 6rem 2.5rem;
@@ -319,9 +318,9 @@ na · HTML
     gap: 4rem;
     align-items: start;
   }
- 
+
   .info-block {}
- 
+
   .info-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.8rem;
@@ -329,7 +328,7 @@ na · HTML
     color: var(--charcoal);
     margin-bottom: 2rem;
   }
- 
+
   .horario-row {
     display: flex;
     justify-content: space-between;
@@ -338,11 +337,11 @@ na · HTML
     border-bottom: 1px solid var(--border);
     font-size: 0.82rem;
   }
- 
+
   .horario-day { color: var(--mid); font-weight: 300; }
   .horario-time { color: var(--charcoal); font-weight: 400; }
   .horario-closed { color: var(--light); font-style: italic; }
- 
+
   .contact-item {
     display: flex;
     align-items: flex-start;
@@ -354,7 +353,7 @@ na · HTML
     transition: color 0.2s;
   }
   .contact-item:hover { color: var(--gold); }
- 
+
   .contact-icon {
     width: 36px; height: 36px;
     border: 1px solid var(--border);
@@ -364,7 +363,7 @@ na · HTML
     flex-shrink: 0;
     color: var(--gold);
   }
- 
+
   .contact-label {
     font-size: 0.68rem;
     letter-spacing: 0.2em;
@@ -372,13 +371,13 @@ na · HTML
     color: var(--light);
     margin-bottom: 0.2rem;
   }
- 
+
   .contact-value {
     font-size: 0.88rem;
     color: inherit;
     font-weight: 400;
   }
- 
+
   /* MAP PLACEHOLDER */
   .map-section {
     background: var(--cream);
@@ -386,14 +385,14 @@ na · HTML
     max-width: 1100px;
     margin: 0 auto;
   }
- 
+
   .map-embed {
     width: 100%;
     height: 320px;
     border: none;
     filter: grayscale(20%) contrast(1.05);
   }
- 
+
   .map-caption {
     display: flex;
     align-items: center;
@@ -402,14 +401,14 @@ na · HTML
     font-size: 0.78rem;
     color: var(--mid);
   }
- 
+
   .map-dot {
     width: 8px; height: 8px;
     border-radius: 50%;
     background: var(--gold);
     flex-shrink: 0;
   }
- 
+
   /* REVIEWS */
   .reviews {
     padding: 6rem 2.5rem;
@@ -455,7 +454,7 @@ na · HTML
   }
   .reviews-cta a:hover { color: var(--gold); border-color: var(--gold); }
   @media (max-width: 768px) { .reviews { padding: 3.5rem 1.5rem; } }
- 
+
   /* CTA FINAL */
   .cta-final {
     background: var(--cream);
@@ -463,9 +462,9 @@ na · HTML
     padding: 5rem 2.5rem;
     text-align: center;
   }
- 
+
   .cta-final .section-label { justify-content: center; display: flex; }
- 
+
   .cta-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2rem, 3.5vw, 3rem);
@@ -475,16 +474,16 @@ na · HTML
     max-width: 600px;
     line-height: 1.2;
   }
- 
+
   .cta-title em { font-style: italic; color: var(--gold); }
- 
+
   .cta-sub {
     font-size: 0.83rem;
     color: var(--mid);
     margin-bottom: 2.5rem;
     font-weight: 300;
   }
- 
+
   /* FOOTER */
   footer {
     background: var(--charcoal);
@@ -498,7 +497,7 @@ na · HTML
     font-size: 0.72rem;
     letter-spacing: 0.08em;
   }
- 
+
   footer a {
     color: var(--gold-light);
     text-decoration: none;
@@ -506,30 +505,30 @@ na · HTML
     font-size: 0.68rem;
     text-transform: uppercase;
   }
- 
+
   footer a:hover { color: var(--gold); }
- 
+
   /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
   }
- 
+
   .hero-eyebrow { animation: fadeUp 0.7s ease both; }
   .hero-title   { animation: fadeUp 0.7s 0.15s ease both; }
   .hero-sub     { animation: fadeUp 0.7s 0.3s ease both; }
   .btn-group    { animation: fadeUp 0.7s 0.45s ease both; }
- 
+
   /* MOBILE */
   @media (max-width: 768px) {
     nav { padding: 1rem 1.25rem; }
     .nav-links { display: none; }
- 
+
     .hero { grid-template-columns: 1fr; min-height: auto; }
     .hero-img { height: 55vw; min-height: 280px; }
     .hero-img::after { background: linear-gradient(to bottom, transparent 50%, var(--warm-white)); }
     .hero-content { padding: 2.5rem 1.5rem 3rem; }
- 
+
     .about { grid-template-columns: 1fr; padding: 3.5rem 1.5rem; gap: 2.5rem; }
     .info { grid-template-columns: 1fr; padding: 3.5rem 1.5rem; gap: 3rem; }
     .services { padding: 3.5rem 1.5rem; }
@@ -541,7 +540,7 @@ na · HTML
 </style>
 </head>
 <body>
- 
+
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">De <span>Dios</span></a>
@@ -552,11 +551,11 @@ na · HTML
     <a href="https://wa.me/34641584380" class="nav-link" target="_blank">Contacto</a>
   </div>
 </nav>
- 
+
 <!-- HERO -->
 <section class="hero">
   <div class="hero-img">
-    <img src="WhatsApp_Image_2026-05-22_at_11_41_06.jpeg" alt="Interior de Joyería De Dios en L'Eliana">
+    <img src="https://i.ibb.co/3yx4sTsy/dediosjoyas.jpg" alt="Interior de Joyería De Dios en L'Eliana">
   </div>
   <div class="hero-content">
     <p class="hero-eyebrow">Joyería · L'Eliana, Valencia</p>
@@ -578,7 +577,7 @@ na · HTML
     </div>
   </div>
 </section>
- 
+
 <!-- DIVIDER -->
 <div class="divider">
   <div class="divider-item"><div class="divider-dot"></div><span class="divider-text">Plata 925</span></div>
@@ -590,7 +589,7 @@ na · HTML
   <div class="divider-item"><div class="divider-dot"></div><span class="divider-text">Marcas internacionales</span></div>
   <div class="divider-item"><div class="divider-dot"></div><span class="divider-text">Asesoramiento personalizado</span></div>
 </div>
- 
+
 <!-- SERVICES -->
 <section class="services" id="servicios">
   <p class="section-label">Lo que hacemos</p>
@@ -618,7 +617,7 @@ na · HTML
     </div>
   </div>
 </section>
- 
+
 <!-- ABOUT -->
 <section class="about" id="nosotros">
   <div>
@@ -650,7 +649,7 @@ na · HTML
     </div>
   </div>
 </section>
- 
+
 <!-- HORARIO + CONTACTO -->
 <section class="info" id="horario">
   <div class="info-block">
@@ -703,7 +702,7 @@ na · HTML
     </a>
   </div>
 </section>
- 
+
 <!-- MAP -->
 <div class="map-section">
   <iframe
@@ -719,14 +718,14 @@ na · HTML
     C. Francisco Alcayde, 23 · L'Eliana 46183 · A 300 m del parking público
   </div>
 </div>
- 
+
 <!-- REVIEWS -->
 <section class="reviews">
   <div class="reviews-inner">
     <p class="section-label">Lo que dicen nuestros clientes</p>
     <h2 class="section-title">Opiniones <em>reales</em><br>en Google</h2>
     <div class="reviews-grid">
- 
+
       <div class="review-card">
         <div class="review-stars">
           <span class="review-star">★</span><span class="review-star">★</span>
@@ -742,7 +741,7 @@ na · HTML
           </div>
         </div>
       </div>
- 
+
       <div class="review-card">
         <div class="review-stars">
           <span class="review-star">★</span><span class="review-star">★</span>
@@ -758,7 +757,7 @@ na · HTML
           </div>
         </div>
       </div>
- 
+
       <div class="review-card">
         <div class="review-stars">
           <span class="review-star">★</span><span class="review-star">★</span>
@@ -774,14 +773,14 @@ na · HTML
           </div>
         </div>
       </div>
- 
+
     </div>
     <div class="reviews-cta">
       <a href="https://maps.app.goo.gl/9w93g8cJZstcXjdx9" target="_blank">Ver todas las reseñas en Google →</a>
     </div>
   </div>
 </section>
- 
+
 <!-- CTA FINAL -->
 <section class="cta-final">
   <p class="section-label">Visítanos</p>
@@ -794,13 +793,12 @@ na · HTML
     <a href="https://maps.google.com/?q=Calle+Francisco+Alcayde+23+L'Eliana+Valencia" class="btn-secondary" target="_blank">Cómo llegar</a>
   </div>
 </section>
- 
+
 <!-- FOOTER -->
 <footer>
   <span>© 2026 Joyería De Dios · L'Eliana, Valencia</span>
   <a href="https://www.instagram.com/joyeria.dedios" target="_blank">@joyeria.dedios</a>
 </footer>
- 
+
 </body>
 </html>
- 
