@@ -409,6 +409,52 @@
     flex-shrink: 0;
   }
 
+  /* REVIEWS */
+  .reviews {
+    padding: 6rem 2.5rem;
+    background: var(--charcoal);
+  }
+  .reviews-inner { max-width: 1100px; margin: 0 auto; }
+  .reviews .section-label { color: var(--gold-light); }
+  .reviews .section-title { color: var(--cream); margin-bottom: 3rem; }
+  .reviews .section-title em { color: var(--gold-light); }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .review-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(184,151,90,0.2);
+    padding: 2rem;
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .review-stars { display: flex; gap: 3px; }
+  .review-star { color: var(--gold-light); font-size: 0.9rem; }
+  .review-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem; font-weight: 300; font-style: italic;
+    line-height: 1.7; color: rgba(247,244,239,0.85); flex: 1;
+  }
+  .review-author { display: flex; align-items: center; gap: 0.75rem; margin-top: 0.5rem; }
+  .review-avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--gold); display: flex; align-items: center;
+    justify-content: center; font-size: 0.8rem; font-weight: 500;
+    color: #fff; flex-shrink: 0;
+  }
+  .review-name { font-size: 0.78rem; font-weight: 500; color: var(--cream); letter-spacing: 0.05em; }
+  .review-source { font-size: 0.68rem; color: rgba(247,244,239,0.4); letter-spacing: 0.1em; text-transform: uppercase; }
+  .reviews-cta { margin-top: 2.5rem; text-align: center; }
+  .reviews-cta a {
+    font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold-light); text-decoration: none;
+    border-bottom: 1px solid rgba(212,180,131,0.3); padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .reviews-cta a:hover { color: var(--gold); border-color: var(--gold); }
+  @media (max-width: 768px) { .reviews { padding: 3.5rem 1.5rem; } }
+
   /* CTA FINAL */
   .cta-final {
     background: var(--cream);
@@ -509,7 +555,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-img">
-    <img src="dediosjoyas.jpeg" alt="Interior de Joyería De Dios en L'Eliana">
+    <img src="WhatsApp_Image_2026-05-22_at_11_41_06.jpeg" alt="Interior de Joyería De Dios en L'Eliana">
   </div>
   <div class="hero-content">
     <p class="hero-eyebrow">Joyería · L'Eliana, Valencia</p>
@@ -672,6 +718,68 @@
     C. Francisco Alcayde, 23 · L'Eliana 46183 · A 300 m del parking público
   </div>
 </div>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="reviews-inner">
+    <p class="section-label">Lo que dicen nuestros clientes</p>
+    <h2 class="section-title">Opiniones <em>reales</em><br>en Google</h2>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars">
+          <span class="review-star">★</span><span class="review-star">★</span>
+          <span class="review-star">★</span><span class="review-star">★</span>
+          <span class="review-star">★</span>
+        </div>
+        <p class="review-text">"Me encanta la joyería. Tienen cosas preciosas, muy elegante y minimalista. Ya es la tercera vez que vengo y siempre te aconsejan genial intentando elegir el conjunto adecuado para ti. Repetiré sin duda para mí o para un regalo."</p>
+        <div class="review-author">
+          <div class="review-avatar">L</div>
+          <div>
+            <div class="review-name">Laura Sebastian</div>
+            <div class="review-source">Google · Local Guide</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <span class="review-star">★</span><span class="review-star">★</span>
+          <span class="review-star">★</span><span class="review-star">★</span>
+          <span class="review-star">★</span>
+        </div>
+        <p class="review-text">"Super contento, fui con una idea de regalo y en seguida me ayudaron a encontrar opciones. Tienen opciones muy estilosas para todos los gustos. Además fui con fechas muy ajustadas y las hicieron posibles. Super recomendados, muy amables y atentos."</p>
+        <div class="review-author">
+          <div class="review-avatar">J</div>
+          <div>
+            <div class="review-name">Javi OL</div>
+            <div class="review-source">Google · Local Guide</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <span class="review-star">★</span><span class="review-star">★</span>
+          <span class="review-star">★</span><span class="review-star">★</span>
+          <span class="review-star">★</span>
+        </div>
+        <p class="review-text">"El lugar perfecto para un bonito regalo para ti o tus seres queridos. Personal muy profesional y atento. Incluso hablan inglés, lo cual fue una ventaja para clientes extranjeros como yo. Definitivamente recomiendo este lugar."</p>
+        <div class="review-author">
+          <div class="review-avatar">H</div>
+          <div>
+            <div class="review-name">Houssaini</div>
+            <div class="review-source">Google · 5 estrellas</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="reviews-cta">
+      <a href="https://maps.app.goo.gl/9w93g8cJZstcXjdx9" target="_blank">Ver todas las reseñas en Google →</a>
+    </div>
+  </div>
+</section>
 
 <!-- CTA FINAL -->
 <section class="cta-final">
